@@ -1,0 +1,127 @@
+.content2 {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.content2 .profile {
+    display: grid;
+    width: 60%;
+    height: 60%;
+    grid-template-rows: 40px 1em 1fr;
+    color: white;
+}
+
+.content2 .profile label {
+    font-size: 40px;
+    grid-row: 1;
+}
+
+.content2 .profile .information {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 220px 20px 1fr;
+    width: 100%;
+}
+
+.content2 .profile .information .image {
+    grid-column: 1;
+    background: rgb(85, 74, 118, 0.5);
+    border-radius: 5% 25%;
+}
+
+.content2 .profile .information .info {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: 1fr 3em;
+}
+
+.content2 .profile .information .info .infouser {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.content2 .profile .information .info .passwordInfo {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.content2 .profile .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2 .profile .image i {
+    font-size: 10em;
+}
+
+.content2 .profile .information .info input {
+    height: 3em;
+    align-self: flex-end;
+    justify-self: right;
+    font-size: 1em;
+}
+
+.content2 .profile .information .info #send {
+    grid-column: 3;
+    grid-row: 2;
+    border: none;
+    width: 90%;
+    border-radius: 5px;
+    background: rgb(44, 34, 51);
+    color: rgba(255, 255, 255, 1);
+}
+
+.content2 .profile .information .info #cancel {
+    grid-column: 1;
+    grid-row: 2;
+    border: none;
+    width: 90%;
+    border-radius: 5px;
+    background: rgba(151, 149, 160, 0.23);
+    color: rgba(255, 255, 255, 1);
+}
+
+.content2 .profile .information .info .infouser input {
+    width: 90%;
+    margin-bottom: 0.5em;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.content2 .profile .information .info .infouser #name:hover {
+    transition: all ease-in 0.2s;
+    background: rgba(85, 74, 118, 0.2);
+    border-bottom: 2px solid white;
+}
+
+.content2 .profile .information .info .passwordInfo input {
+    width: 90%;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.content2 .profile .information .info .passwordInfo input:hover {
+    transition: all ease-in 0.2s;
+    background: rgba(85, 74, 118, 0.2);
+    border-bottom: 2px solid white;
+}

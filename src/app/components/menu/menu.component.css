@@ -1,0 +1,78 @@
+ul {
+    width: 100%;
+    display: flex;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25em;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0.5em;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+ul li:hover {
+    transition: all ease-in-out 0.5s;
+    border-bottom: 2px solid rgb(85, 74, 118);
+}
+
+ul .search {
+    height: 1.5em;
+    width: 30%;
+}
+
+ul .search input {
+    font-size: 0.8em;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding-right: 1.5em;
+    padding-left: 0.6em;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 2em;
+    background: rgba(255, 255, 255, 0.3);
+    outline-color: rgba(0, 0, 0, 0);
+}
+
+ul .search input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+ul .search input:focus+i {
+    transition: all ease-in 0.3s;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+ul .search input:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+ul .search input:hover+i {
+    transition: all ease-in 0.3s;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+ul .search i {
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.3);
+    display: block;
+    position: relative;
+    width: 1.25em;
+    top: -1.55em;
+    left: 89%;
+    border: none;
+    font-size: 0.8em;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 2em;
+}

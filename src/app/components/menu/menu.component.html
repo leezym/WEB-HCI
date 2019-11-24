@@ -1,0 +1,10 @@
+<ul *ngIf="router.url !== '/Ingreso' && router.url !== '/Registro'">
+    <li routerLink="/Home"><a>Inicio</a></li>
+    <li><a>Películas</a></li>
+    <li><a>Guardados</a></li>
+    <li><a>Historial</a></li>
+    <form class="search">
+        <input type="text" name="b" id="b" placeholder="Pelicula">
+        <i class="fas fa-search"></i>
+    </form>
+</ul>

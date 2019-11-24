@@ -1,0 +1,92 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .display {
+    background: rgba(85, 74, 118, 0.3);
+    height: 95%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.container .display #title {
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 1.7em;
+    margin-bottom: 1.5em;
+    text-shadow: 3px 3px 3px black;
+}
+
+.container .display input {
+    padding: 0.7em;
+    font-size: 15px;
+    width: 60%;
+    margin-bottom: 1em;
+}
+
+.container .display #email,
+#password,
+#name,
+#username {
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.container .display #email:hover,
+#password:hover,
+#name:hover,
+#username:hover {
+    transition: all ease-in 0.2s;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid white;
+}
+
+.container .display .buttons {
+    margin-top: 1em;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .display .buttons #cancelar {
+    width: 45%;
+    background: rgb(59, 59, 59, 0.3);
+    border: none;
+    padding: 0.7em;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.container .display .buttons #registrar {
+    width: 45%;
+    background: rgba(151, 149, 160, 0.23);
+    border: none;
+    padding: 0.7em;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.container .display .buttons #cancelar:hover {
+    transition: all ease-in-out 0.3s;
+    background: rgba(93, 92, 95, 0.459);
+}
+
+.container .display .buttons #registrar:hover {
+    transition: all ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.3);
+}

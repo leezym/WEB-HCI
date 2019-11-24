@@ -1,0 +1,86 @@
+.container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.information {
+    display: grid;
+    width: 65%;
+    grid-template-columns: 1fr 1em 325px;
+    height: 84%;
+}
+
+.information .info {
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: 3em 4em 1fr 0.5em 3em;
+}
+
+.information .info #title {
+    color: white;
+    font-size: 3em;
+    grid-row: 1;
+}
+
+.information .info .calification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    grid-row: 2;
+}
+
+.information .info .calification .starts {
+    width: 20%;
+}
+
+.information .info .calification .starts i {
+    color: rgba(177, 174, 10, 0.945);
+    font-size: 1em;
+}
+
+.information .info #description {
+    color: white;
+    font-size: 1em;
+    grid-row: 3;
+}
+
+.information .info .buttons {
+    grid-row: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information .info .buttons input {
+    width: 45%;
+    border: none;
+    height: 100%;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1em;
+}
+
+.information .info .buttons input[type="button"] {
+    background: rgb(44, 34, 51);
+}
+
+.information .info .buttons input[type="submit"] {
+    background: rgb(44, 34, 51);
+    background: rgba(151, 149, 160, 0.23);
+}
+
+.information #image {
+    grid-column: 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.information #image {
+    transition: 1s ease all;
+    width: 325px;
+    height: 400px;
+}

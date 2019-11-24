@@ -1,0 +1,24 @@
+<div class="content">
+    <div class="content2">
+        <div class="movies">
+            <div class="mov" *ngFor="let movie of moviesUp" routerLink="/Information/{{ movie[0].id }}">
+                <img src="../../../assets/img/{{ movie[0].name }}.png" alt="" width="170" height="200">
+                <label id="name">{{ movie[0].name }}</label>
+                <div class="calification">
+                    <i class="fas fa-star" *ngFor="let a of movie[1]"></i>
+                    <i class="fas fa-star-half" *ngFor="let a of movie[2]"></i>
+                </div>
+            </div>
+        </div>
+        <div class="movies">
+            <div class="mov" *ngFor="let movie of moviesDown" routerLink="/Information/{{ movie[0].id }}">
+                <img src="../../../assets/img/{{ movie[0].name }}.png" alt="" width="170" height="200">
+                <label id="name">{{ movie[0].name }}</label>
+                <div class="calification">
+                    <i class="fas fa-star" *ngFor="let a of movie[1]"></i>
+                    <i class="fas fa-star-half" *ngFor="let a of movie[2]"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

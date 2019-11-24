@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="information">
+        <div class="info">
+            <label for="" id="title">{{ movie.name }}</label>
+            <nav class="calification">
+                <label for="">Idioma: {{ movie.language }}</label>
+                <div class="starts">
+                    <i class="fas fa-star" *ngFor="let a of stars"></i>
+                    <i class="fas fa-star-half" *ngFor="let a of middleStars"></i>
+                </div>
+            </nav>
+            <div id="description">
+                {{ movie.description }}
+            </div>
+            <form class="buttons">
+                <input type="button" value="Reproducir">
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+        <img src="../../../assets/img/{{ movie.name }}.png" alt="" id="image" width="0" height="0">
+    </div>
+</div>
